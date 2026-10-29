@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#090909;
+  color:white;
+  line-height:1.6;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.badge{
+  display:inline-block;
+  width:fit-content;
+  padding:10px 18px;
+  border:1px solid #222;
+  border-radius:999px;
+  color:#9ca3af;
+  margin-bottom:30px;
+}
+
+.hero h1{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:clamp(3rem,8vw,6rem);
+  line-height:1;
+}
+
+.hero h1 span{
+  color:#00ff95;
+}
+
+.hero p{
+  max-width:700px;
+  margin-top:25px;
+  color:#9ca3af;
+  font-size:1.2rem;
+}
+
+.hero-btn{
+  margin-top:35px;
+  display:inline-block;
+  width:fit-content;
+  text-decoration:none;
+  background:#00ff95;
+  color:black;
+  padding:16px 28px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.section-title{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
+
+.section-title h2{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.apps{
+  max-width:1200px;
+  margin:auto;
+  padding:50px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#121212;
+  border:1px solid #1f1f1f;
+  border-radius:28px;
+  padding:25px;
+  transition:.25s;
+  text-decoration:none;
+  color:white;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#00ff95;
+}
+
+.card img{
+  width:70px;
+  height:70px;
+  border-radius:18px;
+}
+
+.card h3{
+  font-family:'Space Grotesk',sans-serif;
+  margin-top:20px;
+  font-size:1.5rem;
+}
+
+.card p{
+  margin-top:10px;
+  color:#9ca3af;
+}
+
+.footer{
+  border-top:1px solid #1f1f1f;
+  margin-top:60px;
+  padding:50px 20px;
+  text-align:center;
+}
+
+.footer a{
+  color:#00ff95;
+  text-decoration:none;
+}
